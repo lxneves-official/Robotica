@@ -1,6 +1,3 @@
-//* How to use the DHT-11 sensor with Arduino
-//   Temperature and humidity sensor and
-//   I2C LCD1602
  //  SDA --> A4
  //  SCL --> A5
 
@@ -10,15 +7,13 @@
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
-LiquidCrystal_I2C lcd(0x27,16,2); // set the LCD address to 0x27 for a 16 chars and 2 line display
+LiquidCrystal_I2C lcd(0x27,16,2); 
   
 //Constants
-#define DHTPIN 2     // what pin we're connected to
-#define DHTTYPE DHT11   // DHT 11
-DHT dht(DHTPIN, DHTTYPE); //// Initialize DHT sensor for normal 16mhz Arduino
+#define DHTPIN 2     
+#define DHTTYPE DHT11   
+DHT dht(DHTPIN, DHTTYPE); 
 
-//Variables
-//int chk;
 int h;  //Stores humidity value
 int t; //Stores temperature value
 
@@ -27,8 +22,8 @@ void setup()
     Serial.begin(9600);
     Serial.println("Temperature and Humidity Sensor Test");
     dht.begin();
-    lcd.init(); //initialize the lcd
-    lcd.backlight(); //open the backlight
+    lcd.init(); 
+    lcd.backlight(); 
 }
 
 void loop()
