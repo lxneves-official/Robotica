@@ -10,7 +10,7 @@
 LiquidCrystal_I2C lcd(0x27,16,2); 
   
 //Constants
-#define DHTPIN 2     
+#define DHTPIN 7     
 #define DHTTYPE DHT11   
 DHT dht(DHTPIN, DHTTYPE); 
 
