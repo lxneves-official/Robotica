@@ -4,7 +4,7 @@ CTBot myBot;
 //Definicoes da rede wifi e conexao
 String ssid  = "nome da rede"; //Nome da sua rede wifi
 String pass  = "senha da rede"; //Senha da sua rede wifi
-String token = "7258549787:AAHZ*********************V3v-fDTs7H4"; //Coloque seu token aqui
+String token = "72585497**************************7H4"; //Coloque seu token aqui
 
 //Pinos dos leds
 uint8_t led1 = D4;
